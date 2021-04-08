@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EatWell Pizzeria</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <p>Pizzeria Centuris</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Add Pizza</a></li>
+          <li><a href="menu.html">Pizza Menu</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Our Menu</h1>
+      <div class="container">
+        <fieldset class="sortContainer" id="sortContainer">
+          <legend>Sort by:</legend>
+          <div>
+            <input
+              type="radio"
+              id="sortByName"
+              name="sortBy"
+              value="sortByName"
+              checked
+            />
+            <label for="sortByName">name</label>
+            <input
+              type="radio"
+              id="sortByPrice"
+              name="sortBy"
+              value="sortByPrice"
+            />
+            <label for="sortByPrice">price</label>
+            <input
+              type="radio"
+              id="sortByHeat"
+              name="sortBy"
+              value="sortByHeat"
+            />
+            <label for="sortByHeat">heat</label>
+          </div>
+        </fieldset>
+        <div id="menuContainer">
+          <p id="placeholderElement">No pizzas have been added yet</p>
+        </div>
+      </div>
+    </main>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

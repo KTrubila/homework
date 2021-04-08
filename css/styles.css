@@ -1,0 +1,317 @@
+/*below - index.html & menu html styles */
+
+body, html {
+    background-color: white;
+    margin: 0px 0px 20px 0px;
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    background-color: #f45e7f;
+    align-items: center;
+}
+
+header p {
+    position: absolute;
+    width: 200px;
+    color: white;
+    margin-left: 15px;
+    font-size: 1.5em;
+}
+
+nav {
+    width: 200px;
+    margin: 0 auto;
+}
+
+ul {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width:300px) and (max-width:1200px){
+    header p {
+        display: none;
+    }
+}
+
+
+/*below -index.html styles + media queries*/
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #f45e7f;
+    border-radius: 5px;
+    padding: 20px 20px 0 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.formControl{
+    margin-top: 30px;
+}
+
+.question {
+    font-weight: bold;
+}
+
+.inputField {
+    height: 25px;
+    width: 198px
+}
+
+.inputFieldSelect {
+    height: 31px;
+    width: 206px;
+}
+
+.textFieldSelection {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.errorHidden {
+    display: none;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    position: relative;
+    top: 5px
+}
+
+form fieldset {
+    border-right: none;
+    border-left: none;
+    border-color: #f45e7f;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+#toppingsContainer {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+
+#toppingsContainer div {
+    flex: 1 1 33%;
+}
+
+#photoContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#photoContainer div {
+    flex: 0 0 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+#photoOptions img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+form button {
+    width: 100px;
+    height: 40px;
+    margin: 30px auto 10px auto;
+    background-color: #f45e7f;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+form button:hover{
+    cursor: pointer;
+}
+
+#successMessage {
+    color: green;
+    margin: 0 auto 10px auto;
+    font-weight: bold;
+}
+
+@media screen and (min-width:300px) and (max-width:1200px){
+    form {
+        width: 80%;  
+    }
+    .inputField {
+        width: 150px;
+    }
+    .inputFieldSelect{
+        width: 158px;
+    }
+    .textFieldSelection {
+        width: 230px;
+    }
+    #toppingsContainer {
+        width: 100%;
+    }
+    
+    #toppingsContainer div {
+        flex: 1 1 50%;
+    }
+}
+
+/*below - menu.html styles + media queries*/
+
+.pizzaMenuHeader {
+    margin-bottom: 50px;
+    margin-top: 30px
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.sortContainer {
+    width: 30%;
+    border-right: none;
+    border-bottom: 2px solid #f45e7f;
+    border-left: none;
+    border-top: none;
+    margin-bottom: 20px
+}
+
+.sortContainer legend{
+    font-weight: bold;
+}
+
+#menuContainer {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pizzaContainer {
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 2px solid #f45e7f;
+}
+
+.pizzaInfoContainer {
+    width: 60%;
+    padding: 10px;
+    position: relative;
+}
+
+.pizzaName {
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+.heatContainer {
+    display: flex;
+    width: 50%;
+    margin-top: 5px;
+}
+
+.heatIcon {
+    width: 15px
+}
+
+.priceContainer {
+    font-weight: bold;
+
+}
+
+.pizzaImageContainer {
+    width: 40%;
+    height: 240px;
+}
+
+.deleteBtn {
+    width: 75px;
+    height: 30px;
+    background-color: tomato;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+}
+
+.deleteBtn:hover {
+    cursor: pointer;
+}
+
+.pizzaImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width:300px) and (max-width:1050px){
+    .container {
+        width: 90%;
+    }
+    .sortContainer {
+        width: 220px
+    }
+    .pizzaContainer {
+        width: 100%;
+    }
+    .pizzaImageContainer {
+        height: 210px;
+    }
+}
+
+@media screen and (max-width:670px){
+    .pizzaName {
+        font-size: 1em;
+    }
+    .ingredientsContainer {
+        font-size: 0.7em;
+    }
+}
+
+/*common logic*/
+input[type=radio]:hover {
+    cursor: pointer;
+}
+
+input[type=checkbox]:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+

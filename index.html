@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EatWell Pizzeria</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <p>Pizzeria Centuris</p>
+      <nav>
+        <ul>
+            <li><a href="index.html">Add Pizza</a></li>
+            <li><a href="menu.html">Pizza Menu</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+      <h1>Add Pizza</h1>
+      <form id="form" novalidate>
+        <div>
+          <div class="formControl textFieldSelection">
+            <label for="name" class='question'>Name:*</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="i.e. Diavola"
+              class="inputField"
+            />
+          </div>
+          <small id="nameError" class="error errorHidden"></small>
+        </div>
+        <div>
+          <div class="formControl textFieldSelection borderRed">
+            <label for="price" class='question'>Price:*</label>
+            <input
+              type="number"
+              id="price"
+              name="price"
+              placeholder="i.e. 9.99"
+              step="0.01"
+              min="0.01"
+              class="inputField"
+            />
+          </div>
+          <small id="priceError" class="error errorHidden"></small>
+        </div>
+        <div>
+          <div class="formControl textFieldSelection">
+            <label for="heat" class='question'>Heat:</label>
+            <select id="heat" class="inputFieldSelect">
+              <option value="0">Please choose the heat level</option>
+              <option value="1">1 - slightly hot</option>
+              <option value="2">2 - medium hot</option>
+              <option value="3">3 - very hot</option>
+            </select>
+          </div>
+        </div>
+
+        <fieldset id="toppingOptions" class="formControl">
+          <legend class='question'>Select 2 or more toppings:*</legend>
+          <div id="toppingsContainer">
+            <div>
+              <input
+                type="checkbox"
+                id="anchovies"
+                name="toppings"
+                value="anchovies"
+              />
+              <label for="anchovies">Anchovies</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="blackOlives"
+                name="toppings"
+                value="black olives"
+              />
+              <label for="blackOlives">Black Olives</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="cheese"
+                name="toppings"
+                value="cheese"
+              />
+              <label for="cheese">Cheese</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="freshGarlic"
+                name="toppings"
+                value="fresh garlic"
+              />
+              <label for="freshGarlic">Fresh Garlic</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="greenPepper"
+                name="toppings"
+                value="green pepper"
+              />
+              <label for="greenPepper">Green Pepper</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="jalapenos"
+                name="toppings"
+                value="jalapenos"
+              />
+              <label for="jalapenos">Jalapenos</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="mushrooms"
+                name="toppings"
+                value="mushrooms"
+              />
+              <label for="mushrooms">Mushrooms</label>
+            </div>
+            <div>
+              <input type="checkbox" id="onion" name="toppings" value="onion" />
+              <label for="onion">Onion</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="pepperoni"
+                name="toppings"
+                value="pepperoni"
+              />
+              <label for="pepperoni">Pepperoni</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="sausage"
+                name="toppings"
+                value="sausage"
+              />
+              <label for="sausage">Sausage</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="spicyHam"
+                name="toppings"
+                value="spicy ham"
+              />
+              <label for="spicyHam">Mushrooms</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="tomato"
+                name="toppings"
+                value="tomato"
+              />
+              <label for="tomato">Tomato</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="tomatoSauce"
+                name="toppings"
+                value="tomato sauce"
+              />
+              <label for="tomatoSauce">Tomato Sauce</label>
+            </div>
+          </div>
+          <small id="toppingsError" class="error errorHidden"></small>
+        </fieldset>
+
+        <fieldset id="photoOptions" class="formControl">
+          <legend class="question">Select photo of the pizza:</legend>
+          <div id="photoContainer">
+            <div>
+              <input
+                type="radio"
+                id="pizza1"
+                name="photo"
+                value="images/pizza1.jfif"
+              />
+              <label for="pizza1"
+                ><img
+                  src="images/pizza1.jfif"
+                  alt="pizza photo"
+              /></label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="pizza2"
+                name="photo"
+                value="images/pizza2.jfif"
+              />
+              <label for="pizza2"
+                ><img
+                  src="images/pizza2.jfif"
+                  alt="pizza photo"
+              /></label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="pizza3"
+                name="photo"
+                value="images/pizza3.jfif"
+              />
+              <label for="pizza3"
+                ><img
+                  src="images/pizza3.jfif"
+                  alt="pizza photo"
+              /></label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="pizza4"
+                name="photo"
+                value="images/pizza4.jfif"
+              />
+              <label for="pizza4"
+                ><img
+                  src="images/pizza4.jfif"
+                  alt="pizza photo"
+              /></label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="pizza5"
+                name="photo"
+                value="images/pizza5.jfif"
+              />
+              <label for="pizza5"
+                ><img
+                  src="images/pizza5.jfif"
+                  alt="pizza photo"
+              /></label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="noPizza"
+                name="photo"
+                value="images/defaultpizza.jpg"
+              />
+              <label for="noPizza"
+                ><img
+                  src="images/defaultpizza.jpg"
+                  alt="default photo"
+              /></label>
+            </div>
+          </div>
+          <small id="photoError" class="error errorHidden"></small>
+        </fieldset>
+
+        <button type="submit">Add Pizza</button>
+        <small class="hidden" id="successMessage">Pizza successfully added</small>
+      </form>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
